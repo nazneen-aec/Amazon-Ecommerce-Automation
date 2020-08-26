@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/Selenium/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Selenium/libs/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/com.genymobile.genymotion.ide.eclipse.plugin_1.0.6.201509291453.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jcommander-1.7.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/animal-sniffer-annotations-1.14.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/ant-1.9.6.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/ant-launcher-1.9.6.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/asm-6.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/aspectjweaver-1.9.1.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/byte-buddy-1.8.3.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/cglib-3.2.6.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/checker-compat-qual-2.0.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/commons-beanutils-1.9.2.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/commons-digester-1.8.1.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/commons-validator-1.6.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/error_prone_annotations-2.1.3.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/gson-2.8.4.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/guava-23.6-jre.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/httpclient-4.5.5.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/j2objc-annotations-1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/jsr305-1.3.9.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/okhttp-3.9.1.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/okio-1.13.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/opencv-3.2.0-1.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/selenium-api-3.12.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/selenium-chrome-driver-3.12.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/selenium-edge-driver-3.12.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/selenium-firefox-driver-3.12.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/selenium-ie-driver-3.12.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/selenium-java-3.12.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/selenium-opera-driver-3.12.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/selenium-remote-driver-3.12.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/selenium-safari-driver-3.12.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/selenium-support-3.12.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/spring-aop-5.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/spring-beans-5.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/spring-context-5.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/spring-core-5.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/spring-expression-5.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/jar_files/spring-jcl-5.0.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/java-client-6.1.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/commons-lang3-3.9.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_231.0"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/poi-3.16.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/poi-examples-3.16.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/poi-excelant-3.16.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/poi-ooxml-3.16.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/poi-ooxml-schemas-3.16.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/poi-scratchpad-3.16.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/lib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/ooxml-lib/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/Mobile Automation/ApachePOI/poi-3.16/ooxml-lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
