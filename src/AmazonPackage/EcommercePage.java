@@ -20,12 +20,13 @@ public class EcommercePage extends SettingsFile {
 	static String expectedProductDetail = "Philips 164 cm (65 inches) 6700 Series 4K Ambilight LED Smart TV 65PUT6703S/94 (Dark Sliver)";
 	static String expectedProductPrice = "79,999.00";
 
-	// To Login Amazon Site
 	@Test
 	public void Login() throws MalformedURLException, InterruptedException {
 		AndroidDriver<AndroidElement> driver = Capabilites();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(5000);
+
+		// To Login Amazon Site
 		driver.findElement(By.id("com.amazon.mShop.android.shopping:id/sign_in_button")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(
@@ -100,23 +101,35 @@ public class EcommercePage extends SettingsFile {
 		driver.findElementByAndroidUIAutomator(
 				"new UiScrollable(new UiSelector()).scrollIntoView(text(\"Add to Cart\"));").click();
 
-		
 		Thread.sleep(5000);
-		
-		//Switch frame to Checkout
-		
-		driver.switchTo().frame(1);
+
+		// Switch frame to Checkout
+
+		// driver.switchTo().frame(1);
 
 		// compare checkout price with Cart Price
 
-		String checkoutPrice = driver.findElement(By.xpath("//android.widget.TextView[@text='₹ 79,999.00']")).getText();
-		System.out.println(checkoutPrice);
+		String cartItem = driver.findElement(By.xpath("//android.widget.TextView[@text='2 items']")).getText();
 
-		String actualCheckoutPrice = productPrice.substring(2);
+		if ("2 items" == cartItem) {
+			// Assert.assertEquals("2 items", cartItem);
 
-		/// Now Validate Product cart Actual price is equals to Checkout product price
+			String checkoutPrice = driver.findElement(By.xpath("//android.widget.TextView[@text='₹ 79,999.00']"))
+					.getText();
+			System.out.println(checkoutPrice);
 
-		Assert.assertEquals("Cart Price and Checkout price is matched:" + actualProductPrice, actualCheckoutPrice);
+			String actualCheckoutPrice = productPrice.substring(2);
+
+			/// Now Validate Product cart Actual price is equals to Checkout product price
+
+			Assert.assertEquals(actualProductPrice, actualCheckoutPrice);
+
+		}
+
+		else {
+
+			System.out.println("price not matched, More products added on the add to cart");
+		}
 
 	}
 
