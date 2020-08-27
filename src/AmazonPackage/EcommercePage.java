@@ -67,31 +67,32 @@ public class EcommercePage extends SettingsFile {
 			System.out.println("NOT FOUND!");
 		}
 
-		//// Sometime product name is changing for TV so When product name chnage then it will skip the element and also not verify it
-		
+		//// Sometime product name is changing for TV so When product name chnage then
+		//// it will skip the element and also not verify it
+
 		if (driver.findElements(By.xpath("//android.widget.TextView[@text='PHILIPS']")).size() > 0) {
-			String actualProductName = driver.findElement(By.xpath("//android.widget.TextView[@text='PHILIPS']")).getText();
+			String actualProductName = driver.findElement(By.xpath("//android.widget.TextView[@text='PHILIPS']"))
+					.getText();
 			// ........ Verify Product Name
 			Assert.assertEquals(expectedProductName, actualProductName);
-			
-			
+
 		} else {
 			System.out.println("Product not found");
-			
+
 		}
 		// ........ Verify Product Name, product Detail and Product price.......
-
-		
 
 		String actualProductDetail = driver.findElement(By.xpath(
 				"//android.view.View[@text='Philips 164 cm (65 inches) 6700 Series 4K Ambilight LED Smart TV 65PUT6703S/94 (Dark Sliver)']"))
 				.getText();
 
-		String actualProductPrice = driver.findElement(By.xpath("//android.widget.TextView[1]")).getText();
+		String productPrice = driver.findElement(By.xpath("//android.widget.TextView[@text='₹ 79,999.00']")).getText();
 
-		// System.out.println(actualProductPrice);
+		System.out.println(productPrice);
 
-		
+		String actualProductPrice = productPrice.substring(2);
+
+		System.out.println(actualProductPrice);
 		Assert.assertEquals(expectedProductDetail, actualProductDetail);
 
 		//// Scroll page to Add to cart button
@@ -99,24 +100,23 @@ public class EcommercePage extends SettingsFile {
 		driver.findElementByAndroidUIAutomator(
 				"new UiScrollable(new UiSelector()).scrollIntoView(text(\"Add to Cart\"));").click();
 
-		// Click on Add to cart button
-
-		driver.findElement(By.xpath("//android.widget.Button[@text='Add to Cart']")).click();
-
-		// compare checkout price
 		
+		Thread.sleep(5000);
 		
-		//List<MobileElement> els1 = (MobileElement) driver.findElementsByXPath("android.widget.TextView[@text='₹ 79,999.00']");
+		//Switch frame to Checkout
 		
+		driver.switchTo().frame(1);
 
-		//String CheckoutPrice = driver.findElementsByAccessibilityId("//android.widget.TextView[@text='₹ 79,999.00']")).getText();
-		//System.out.println(CheckoutPrice);
-		String CheckoutPrice =driver.findElementByXPath("//*[@x='176,993' and @y='1039']").getText();
-		System.out.println(CheckoutPrice);
-		
-		/// Now Validate Product Actual price is equals to Checkout product price
+		// compare checkout price with Cart Price
 
-		//Assert.assertEquals(actualProductPrice, CheckoutPrice);
+		String checkoutPrice = driver.findElement(By.xpath("//android.widget.TextView[@text='₹ 79,999.00']")).getText();
+		System.out.println(checkoutPrice);
+
+		String actualCheckoutPrice = productPrice.substring(2);
+
+		/// Now Validate Product cart Actual price is equals to Checkout product price
+
+		Assert.assertEquals("Cart Price and Checkout price is matched:" + actualProductPrice, actualCheckoutPrice);
 
 	}
 

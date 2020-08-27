@@ -2,19 +2,59 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="130670" started-at="2020-08-26T20:46:49 IST" finished-at="2020-08-26T20:49:00 IST">
+  <suite name="Default suite" duration-ms="102258" started-at="2020-08-27T11:09:44 IST" finished-at="2020-08-27T11:11:27 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="130670" started-at="2020-08-26T20:46:49 IST" finished-at="2020-08-26T20:49:00 IST">
+    <test name="Default test" duration-ms="102258" started-at="2020-08-27T11:09:44 IST" finished-at="2020-08-27T11:11:27 IST">
       <class name="AmazonPackage.EcommercePage">
-        <test-method status="FAIL" signature="Login()[pri:0, instance:AmazonPackage.EcommercePage@86be70a]" name="Login" duration-ms="130615" started-at="2020-08-26T20:46:50 IST" finished-at="2020-08-26T20:49:00 IST">
-          <exception class="java.lang.ClassCastException">
+        <test-method status="FAIL" signature="Login()[pri:0, instance:AmazonPackage.EcommercePage@7a187f14]" name="Login" duration-ms="102182" started-at="2020-08-27T11:09:44 IST" finished-at="2020-08-27T11:11:27 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[java.util.ArrayList cannot be cast to io.appium.java_client.MobileElement]]>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-0NV2K68R', ip: '192.168.155.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\ce\eclipse-workspa..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: com.amazon.mShop.android.sh..., autoAcceptAlerts: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\ce\eclipse-workspa..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: com.amazon.mShop.android.sh..., autoAcceptAlerts: true, automationName: UiAutomator2, deviceName: Pixel2, newCommandTimeout: 100, platformName: android, resetKeyboard: true, unicodeKeyboard: true}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A105F, deviceName: RZ8M31MWT9A, deviceScreenDensity: 280, deviceScreenSize: 720x1520, deviceUDID: RZ8M31MWT9A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 100, pixelRatio: 1.75, platform: LINUX, platformName: Android, platformVersion: 10, resetKeyboard: true, statBarHeight: 54, takesScreenshot: true, unicodeKeyboard: true, viewportRect: {height: 1328, left: 0, top: 54, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 6d510c14-8940-4a87-a508-080e130d369b
+*** Element info: {Using=xpath, value=//android.view.View[@text='Philips 164 cm (65 inches) 6700 Series 4K Ambilight LED Smart TV 65PUT6703S/94 (Dark Sliver)']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: java.util.ArrayList cannot be cast to io.appium.java_client.MobileElement
-at AmazonPackage.EcommercePage.Login(EcommercePage.java:114)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-0NV2K68R', ip: '192.168.155.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\ce\eclipse-workspa..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: com.amazon.mShop.android.sh..., autoAcceptAlerts: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\ce\eclipse-workspa..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: com.amazon.mShop.android.sh..., autoAcceptAlerts: true, automationName: UiAutomator2, deviceName: Pixel2, newCommandTimeout: 100, platformName: android, resetKeyboard: true, unicodeKeyboard: true}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A105F, deviceName: RZ8M31MWT9A, deviceScreenDensity: 280, deviceScreenSize: 720x1520, deviceUDID: RZ8M31MWT9A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 100, pixelRatio: 1.75, platform: LINUX, platformName: Android, platformVersion: 10, resetKeyboard: true, statBarHeight: 54, takesScreenshot: true, unicodeKeyboard: true, viewportRect: {height: 1328, left: 0, top: 54, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 6d510c14-8940-4a87-a508-080e130d369b
+*** Element info: {Using=xpath, value=//android.view.View[@text='Philips 164 cm (65 inches) 6700 Series 4K Ambilight LED Smart TV 65PUT6703S/94 (Dark Sliver)']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at AmazonPackage.EcommercePage.Login(EcommercePage.java:85)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -45,7 +85,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
